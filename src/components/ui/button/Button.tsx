@@ -1,28 +1,23 @@
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./button.styles";
 import type { ButtonProps } from "./button.types";
 
 export default function Button({
+  className,
   variant,
   size,
-  className,
-  loading,
-  children,
+  asChild = false,
   ...props
 }: ButtonProps) {
+  const Comp = asChild ? Slot : "button";
+
   return (
-    <button
-      className={cn(
-        buttonVariants({
-          variant,
-          size,
-        }),
-        className
-      )}
-      disabled={loading}
+    <Comp
+      className={cn(buttonVariants({ variant, size }), className)}
       {...props}
-    >
-      {loading ? "Loading..." : children}
-    </button>
+    />
   );
 }
