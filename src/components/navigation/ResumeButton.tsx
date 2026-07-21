@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"; 
-import { portfolio } from "@/src/data/portfolio";
+import { Button } from "../ui"; 
+import { portfolio } from "@/data/portfolio";
 
 export default function ResumeButton() {
   return (

@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button";
-import { portfolio } from "@/src/data/portfolio"; 
-import { skills } from "@/src/data/skills"; 
+import { Button } from "@/components/ui"; 
+import { portfolio } from "@/data/portfolio"; 
+import { skills } from "@/data/skills"; 
 import HeroStats from "./HeroStats";
+
+
+import { motion } from "framer-motion";
+import { slideUp } from "@/animations";
+
 
 export default function HeroContent() {
   return (
-    <div>
+    <motion.div variants={slideUp}>
       {/* Availability */}
       <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-green-500/30 bg-green-500/10 px-4 py-2">
         <span className="h-2.5 w-2.5 rounded-full bg-green-400 animate-pulse" />
@@ -63,6 +68,6 @@ export default function HeroContent() {
           Download Resume
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 }
