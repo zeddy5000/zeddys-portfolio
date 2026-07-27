@@ -1,58 +1,185 @@
-export const projects = [
+import type {
+  Project,
+  ProjectStatus,
+} from "@/components/sections/projects/project.types";
+
+export const projects: Project[] = [
   {
-    title: "Payroll Formatter",
+    id: "sirkka-health",
+
+    featured: true,
+
+    title: "Sirkka Health",
+
+    subtitle: "Enterprise Healthcare Platform",
+
+    category: "Healthcare",
 
     description:
-      "A web application that automates payroll formatting and exports customized Excel and CSV reports.",
+      "A secure healthcare platform for managing patient records, appointments and enterprise healthcare workflows.",
+
+    image: "",
+
+    github: "",
+
+    live: "",
+
+    status: "Private" as ProjectStatus,
+
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "PostgreSQL",
+      "Docker",
+    ],
+
+    highlights: [
+      "Developed enterprise healthcare modules.",
+      "Integrated secure REST APIs.",
+      "Improved application performance.",
+      "Collaborated with distributed engineering teams.",
+    ],
+
+    contributions: [
+      "Backend API Development",
+      "Frontend Development",
+      "Authentication",
+      "Database Design",
+    ],
+  },
+
+  {
+    id: "easyshare",
+
+    featured: true,
+
+    title: "EasyShare",
+
+    subtitle: "Digital Payment Platform",
+
+    category: "FinTech",
+
+    description:
+      "A secure fintech platform supporting digital payments, authentication and wallet management.",
+
+    image: "",
+
+    github: "",
+
+    live: "",
+
+    status: "Private" as ProjectStatus,
+
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Recoil",
+      "Tailwind CSS",
+      "SCSS",
+    ],
+
+    highlights: [
+      "Implemented authentication.",
+      "Built responsive dashboards.",
+      "Integrated APIs.",
+      "Improved application performance.",
+    ],
+
+    contributions: [
+      "Frontend Development",
+      "Dashboard UI",
+      "Authentication",
+      "API Integration",
+    ],
+  },
+
+  {
+    id: "payroll-formatter",
+
+    featured: false,
+
+    title: "Payroll Formatter",
+
+    subtitle: "Payroll Automation Tool",
+
+    category: "Business Automation",
+
+    description:
+      "A Django application that automates payroll formatting, Excel processing and report generation.",
+
+    image: "",
+
+    github: "https://github.com/yourusername/payroll-formatter",
+
+    live: "",
+
+    status: "In Progress" as ProjectStatus,
 
     technologies: [
       "Python",
       "Django",
       "Pandas",
+      "OpenPyXL",
+      "Tailwind CSS",
     ],
 
-    github: "#",
+    highlights: [
+      "Excel automation.",
+      "CSV generation.",
+      "Column manager.",
+      "Payroll processing.",
+    ],
 
-    live: "#",
-
-    featured: true,
+    contributions: [
+      "Backend Development",
+      "Frontend Development",
+      "Excel Automation",
+      "System Design",
+    ],
   },
 
   {
-    title: "SportyExpats",
+    id: "klad-admissions",
+
+    featured: false,
+
+    title: "Klad Admissions",
+
+    subtitle: "Admission Management System",
+
+    category: "Education",
 
     description:
-      "A sports event management platform connecting sports enthusiasts around the world.",
+      "A student admission management platform with administrative dashboards and reporting.",
 
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-    ],
+    image: "",
 
-    github: "#",
+    github: "",
 
-    live: "#",
+    live: "",
 
-    featured: true,
-  },
-
-  {
-    title: "Sirkka Health",
-
-    description:
-      "Healthcare platform for managing digital health services and patient experiences.",
+    status: "Private" as ProjectStatus,
 
     technologies: [
       "React",
-      "Supabase",
-      "TypeScript",
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
     ],
 
-    github: "#",
+    highlights: [
+      "Administration dashboard.",
+      "Student management.",
+      "Responsive UI.",
+      "Backend integration.",
+    ],
 
-    live: "#",
-
-    featured: true,
+    contributions: [
+      "Frontend Development",
+      "Dashboard",
+      "API Integration",
+      "Testing",
+    ],
   },
 ];

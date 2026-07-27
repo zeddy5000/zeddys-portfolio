@@ -1,43 +1,40 @@
-export const skills = [
+import type { SkillCategory } from "@/components/sections/skills/skills..types";
+
+export const skills: SkillCategory[] = [
   {
-    category: "Backend",
+    title: "Backend Development",
     items: [
-      "Java",
-      "Spring Boot",
-      "Node.js",
-      "NestJS",
-      "REST APIs",
+      { name: "Java", level: 95 },
+      { name: "Spring Boot", level: 92 },
+      { name: "Python", level: 85 },
+      { name: "Node.js", level: 82 },
     ],
   },
-
   {
-    category: "Frontend",
+    title: "Frontend Development",
     items: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "JavaScript",
+      { name: "React", level: 95 },
+      { name: "Next.js", level: 93 },
+      { name: "TypeScript", level: 90 },
+      { name: "Tailwind CSS", level: 90 },
     ],
   },
-
   {
-    category: "Database",
+    title: "Database & Cloud",
     items: [
-      "PostgreSQL",
-      "MySQL",
-      "Prisma",
+      { name: "PostgreSQL", level: 90 },
+      { name: "MySQL", level: 82 },
+      { name: "Docker", level: 88 },
+      { name: "AWS", level: 80 },
     ],
   },
-
   {
-    category: "Cloud & Tools",
+    title: "Tools & Workflow",
     items: [
-      "Docker",
-      "Git",
-      "GitHub",
-      "AWS",
-      "CI/CD",
+      { name: "Git", level: 95 },
+      { name: "GitHub", level: 95 },
+      { name: "Postman", level: 90 },
+      { name: "Jira", level: 82 },
     ],
   },
 ];

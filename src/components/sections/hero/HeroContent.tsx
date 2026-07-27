@@ -46,16 +46,16 @@ export default function HeroContent() {
 
       {/* Tech Chips */}
 
-      <div className="mt-10 flex flex-wrap gap-3">
-        {skills[0].items.slice(0, 5).map((skill) => (
-          <span
-            key={skill}
-            className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
+     <div className="mt-10 flex flex-wrap gap-3">
+  {skills[0].items.slice(0, 5).map((skill) => (
+    <span
+      key={skill.name}
+      className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm"
+    >
+      {skill.name}
+    </span>
+  ))}
+</div>
 
       {/* Buttons */}
 
