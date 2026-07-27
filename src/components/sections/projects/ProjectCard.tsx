@@ -41,7 +41,10 @@ export default function ProjectCard({
       >
         {/* Project Thumbnail */}
 
-        <ProjectImage project={project} />
+        <ProjectImage
+          image={project.image}
+          title={project.title}
+        />
 
         <div className="space-y-6 p-8">
 

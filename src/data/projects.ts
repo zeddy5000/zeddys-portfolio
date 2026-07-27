@@ -18,7 +18,7 @@ export const projects: Project[] = [
     description:
       "A secure healthcare platform for managing patient records, appointments and enterprise healthcare workflows.",
 
-    image: "",
+    image: "/images/projects/sirkka_health_img.png",
 
     github: "",
 
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       "A secure fintech platform supporting digital payments, authentication and wallet management.",
 
-    image: "",
+    image: "/images/projects/easyshare_img.jpeg",
 
     github: "",
 
@@ -110,7 +110,7 @@ export const projects: Project[] = [
 
     image: "",
 
-    github: "https://github.com/yourusername/payroll-formatter",
+    github: "https://github.com/zeddy5000/payroll_formatter",
 
     live: "",
 
