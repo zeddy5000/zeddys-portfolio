@@ -93,9 +93,9 @@ I'm passionate about writing clean code, solving challenging problems and buildi
   // ==========================
 
   socials: {
-    github: "https://github.com/yourusername",
+    github: "https://github.com/zeddy5000",
 
-    linkedin: "https://linkedin.com/in/yourprofile",
+    linkedin: "https://linkedin.com/in/zeddy-isu",
 
     twitter: "https://twitter.com/yourusername",
   },

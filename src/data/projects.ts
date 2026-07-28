@@ -108,7 +108,7 @@ export const projects: Project[] = [
     description:
       "A Django application that automates payroll formatting, Excel processing and report generation.",
 
-    image: "",
+    image: "/images/projects/payslip_formatter_img.png",
 
     github: "https://github.com/zeddy5000/payroll_formatter",
 
